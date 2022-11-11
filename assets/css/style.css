@@ -204,31 +204,34 @@ footer{
     height: 150px;
 }
 
-.social-networks{
+.footer ul{
     text-align: center;
-    list-style-type: none;
+    list-style: none;
 }
 
-.social-networks li{
+ul.social-networks li{
     display: inline;
 }
 
-.social-networks i{
-    font-size: 160%;
+ul.social-networks i{
+    font-size: 25px;
     margin: 1%;
-    padding: 5%;
+    padding: 3rem
     color: #777777;
 }
 
 #photo {
     clear: both;
-    line-height: 0;
-    column-count: 4;
-    column-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
 }
 
 #photo img{
     width: 100%;
+    max-height: 274px;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media screen and (max-width: 1396px){
@@ -306,12 +309,12 @@ footer{
     }
 
     #photo{
-        column-count: 3;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 800px){
     #photo{
-        column-count: 2;
+        grid-template-columns: 1fr 1fr;
     }
 }
