@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 *{
     margin:0;
@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: Lato;
+    font-family:  Arial, sans-serif;
     color: #777777;
 }
 
