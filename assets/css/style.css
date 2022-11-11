@@ -51,10 +51,12 @@ h2{
 
 #menu a:hover{
     border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .active{
     border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 #hero-image{
