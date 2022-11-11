@@ -171,13 +171,13 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png') no-repeat center center;
+    background: url('../../assets/images/compass.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
 #times{
-    background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
+    background-image: url(../../assets/images/travel-plan.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
