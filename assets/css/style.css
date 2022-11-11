@@ -59,7 +59,7 @@ h2{
     background-size:cover;
     
     animation: zoom-in-zoom-out 15s ease-in-out 2;
-    
+    animation-delay: 3s;
 }
 
 #hero-outer{
