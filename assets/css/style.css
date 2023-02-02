@@ -1,33 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-*{
-    margin:0;
-    padding:0;
-    border:0;
-}
+*{margin:0;padding:0;border:0;box-sizing:border-box;}
 
 :root {
   --main-color: #616b48;
-  --secondary-color: #52486B;
+  --secondary-color: /*#52486B*/ #d5a95b;
+  --white-color:  #fff;
+  --body-color: #777;
 }
 
 body{
     font-family:  Arial, sans-serif;
-    color: #777777;
+    color: var(--body-color);
 }
 
-h2{
-    font-family: Oswald;
+h1, h2{
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: var(--main-color);
 }
 
-#logo{
-    float: left;
-    font-size: 280%;
-    margin-left: 30px;
-}
+header {display:grid;grid-template-columns:1fr 1fr;align-items: center;}
+
+#logo {margin-left:30px;}
+#logo img {max-height:125px;}
 
 #menu{
     font-size: 110%;
@@ -35,7 +32,7 @@ h2{
     letter-spacing: 4px;
 }
 
-#logo, #menu{
+#menu{
     line-height: 75px;
 }
 
@@ -50,12 +47,12 @@ h2{
 }
 
 #menu a:hover{
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
     color: var(--secondary-color);
 }
 
 .active{
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
     color: var(--secondary-color);
 }
 
@@ -90,7 +87,7 @@ h2{
 }
 
 #cover-text, #cover-text h2 {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 #cover-text {
@@ -105,7 +102,7 @@ h2{
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba(97,107,72, 0.7); }
+    background-color: rgba(97,107,72, 0.7);
 
     bottom: 30px;
     right: 150px;
@@ -185,47 +182,26 @@ hr {
     border-radius: 50%;
 }
 
-#times{
-    background: url("../../assets/images/travel-plan.jpg") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
-}
+.fa, .fas, .fab, i {color:var(--secondary-color);}
 
-#times div {
-    color: #fafafa;
-    background-color: rgba(0,0,0, .6);
-    width: 19%;
-    height: 300px;
-    float: left;
-    padding: 30px 0 0 10px;
-    text-align: center;
-    margin: 2px;
-}
+#times {display:grid;grid-template-columns:repeat(5, 1fr);grid-gap:5px;background:url("../../assets/images/travel-plan.jpg") no-repeat center center;background-size:cover;width:100%;overflow:hidden;}
+#times .times-block {height:auto;padding:3rem 0;text-align:center;color: var(--white-color);background-color: rgba(0,0,0, .6);}
+#times .times-block:hover {background-color:rgba(0,0,0, .9);
+    -moz-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+    -webkit-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;}
 
-#times h2 {
-    color: #fafafa;
-}
+#times h2, #times i {color: var(--white-color);}
+#times h2 {margin:0 2rem 1.5rem;border-bottom:4px solid var(--white-color);}
+#times h3 {margin-bottom:1rem;}
 
-footer{
-    height: 150px;
-}
+footer{/*height:150px;*/}
 
-.footer ul{
-    text-align: center;
-    list-style: none;
-}
+footer ul.social-networks{text-align:center;list-style:none;}
 
-ul.social-networks li{
-    display: inline;
-}
-
-ul.social-networks i{
-    font-size: 25px;
-    margin: 1%;
-    padding: 3rem;
-    color: #777777;
-}
+ul.social-networks li{display:inline-block;padding:1rem 1.5rem;font-size:30px;}
+ul.social-networks li i{font-size:30px;color: var(--main-color);}
 
 #photo {
     clear: both;
@@ -241,7 +217,68 @@ ul.social-networks i{
     object-position: center;
 }
 
-@media screen and (max-width: 1396px){
+
+/* Form */
+
+.form-section {
+    clear: left;
+    background: url("../../assets/images/prepare-to-travel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color:  var(--white-color);;
+    background-color: rgba(60, 60, 60, 0.9);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form > h2 {
+    color:  var(--white-color);;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color:  var(--white-color);;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid  var(--white-color);;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color:  var(--main-color);;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color:  var(--main-color);;
+    color:  var(--white-color);;
+    display: block;
+}
+
+.join-button:hover {
+    background-color:  var(--white-color);;
+    color:  var(--main-color);;
+}
+
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
+
+@media screen and (max-width: 1200px){
     #club-ethos{
         width: 65%;
         height: 1200px;
@@ -272,7 +309,7 @@ ul.social-networks i{
         height: 150px;
         border-style: solid;
         border-bottom-width: 1px;
-        border-bottom-color: #fff; 
+        border-bottom-color:  var(--white-color);; 
         padding: 0;
     }
 
