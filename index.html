@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Let The Adventure Begin</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" href="/assets/favicon/favicon-16x16.pn" type="image/x-icon">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#616b48">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ssets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#616b48">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -17,14 +20,14 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <h2 ID="logo">Let The Adventure Begin</h2>
+        <a id="logo" href="/">
+            <img src="assets/images/logo.png" alt="Let The Adventure Begin logo">
         </a>
         <nav>
             <ul id="menu">
-                <li><a class="active" href="/">Home</a></li>
+                <li><a href="book-now.html">Book Now</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Book Now</a></li>
+                <li><a class="active" href="/">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -80,35 +83,35 @@
         </div>
     </section>
     <section id="times">
-        <div>
+        <div class="times-block">
             <h2>Urban <i class="fas fa-city"></i></h2>
             <h3>Monday</h3>
             <h3>5K</h3>
             <h3>The Marker Hotel</h3>
             <h3>18:30</h3>
         </div>
-        <div>
+        <div class="times-block">
             <h2>Trail <i class="fas fa-tree"></i></h2>
             <h3>Wednesday</h3>
             <h3>10K</h3>
             <h3>The Phoenix Park</h3>
             <h3>18:30</h3>
         </div>
-        <div>
+        <div class="times-block">
             <h2>Urban <i class="fas fa-city"></i></h2>
             <h3>Friday</h3>
             <h3>5K</h3>
             <h3>The Marker Hotel</h3>
             <h3>18:30</h3>
         </div>
-        <div>
+        <div class="times-block">
             <h2>Trail <i class="fas fa-tree"></i></h2>
             <h3>Saturday</h3>
             <h3>10K</h3>
             <h3>The Phoenix Park</h3>
             <h3>09:30</h3>
         </div>
-        <div>
+        <div class="times-block">
             <h2>Coffee <i class="fas fa-mug-hot"></i></h2>
             <h3>Sunday</h3>
             <h3>0K</h3>
@@ -118,13 +121,15 @@
     </section>
     <footer>
         <ul class="social-networks">
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></li>
-            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></li>
-            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></li>
-            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </footer> 
-  
+
+     <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

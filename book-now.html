@@ -31,16 +31,29 @@
             </ul>
         </nav>
     </header>
-    <section id="photo">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/girls.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/man.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner1.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner2.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/athletes.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/runner3.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/running_gang.jpg">
-        <img src="http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/athletes.jpg">
-
+    <section class="form-section">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+            <h2><i class="fas fa-heartbeat"></i> Let's get you signed up!</h2>
+            <label for="fname">First Name</label>
+            <input class="text-input" id="fname" name="first_name" type="text" required>
+            
+            <label for="lname">Last Name</label>
+            <input class="text-input" id="lname" name="last_name" type="text" required>
+            
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="email" name="email_address" required>
+            
+            <label for="destination">Choose The Destination:</label>
+            <br>
+            <label for="road">Road</label>
+            <input type="radio" id="road" name="running_preference" value="road" required>
+            <label for="trail">Trail</label>
+            <input type="radio" id="trail" name="running_preference" value="trail" required>
+            <label for="both">Both</label>
+            <input type="radio" id="both" name="running_preference" value="both" required>
+            
+            <input class="join-button" type="submit" value="Let's Run!">
+        </form>
     </section>
     <footer>
         <ul class="social-networks">
@@ -51,7 +64,7 @@
         </ul>
     </footer> 
 
-     <!-- Font awesome script -->
+    <!-- Font awesome script -->
     <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
 </body>
 
