@@ -6,6 +6,8 @@ const imageContainer = document.getElementById("image-container");
         "https://api.unsplash.com/photos/random?query=hiking,mountaineering,traveling&client_id=b5H9YUli8wDuaTQPTiLDEqBO3x6NkDbaRabIW48Q5_U"
       );
       const data = await response.json();
+      const imageContainer = document.createElement("div");
+      imageContainer.classList.add("image-attribution-container");
       const image = document.createElement("img");
       image.classList.add("image");
       image.src = data.urls.regular;
@@ -18,6 +20,7 @@ const imageContainer = document.getElementById("image-container");
       attribution.innerHTML = `Photo by <a href="${data.user.links.html}?utm_source=your_app_name&utm_medium=referral">${data.user.name}</a> on <a href="https://unsplash.com/?utm_source=your_app_name&utm_medium=referral">Unsplash</a>`;
       imageContainer.appendChild(image);
       imageContainer.appendChild(attribution);
+      document.getElementById("image-container").appendChild(imageContainer);
     }
   }
 
