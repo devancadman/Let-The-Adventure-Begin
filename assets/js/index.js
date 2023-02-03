@@ -17,7 +17,7 @@ const imageContainer = document.getElementById("image-container");
       });
       const attribution = document.createElement("div");
       attribution.classList.add("attribution");
-      attribution.innerHTML = `Photo by <a href="${data.user.links.html}?utm_source=your_app_name&utm_medium=referral">${data.user.name}</a> on <a href="https://unsplash.com/?utm_source=your_app_name&utm_medium=referral">Unsplash</a>`;
+      attribution.innerHTML = `Photo by <a href="${data.user.links.html}?utm_source=Randomly_get_Images_for_LTAB&utm_medium=referral">${data.user.name}</a> on <a href="https://unsplash.com/?utm_source=your_app_name&utm_medium=referral">Unsplash</a>`;
       imageContainer.appendChild(image);
       imageContainer.appendChild(attribution);
       document.getElementById("image-container").appendChild(imageContainer);
