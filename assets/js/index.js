@@ -13,8 +13,12 @@ const imageContainer = document.getElementById("image-container");
       image.addEventListener("click", () => {
         window.open(data.links.download, "_blank");
       });
+      const attribution = document.createElement("div");
+      attribution.classList.add("attribution");
+      attribution.innerHTML = `Photo by <a href="${data.user.links.html}?utm_source=your_app_name&utm_medium=referral">${data.user.name}</a> on <a href="https://unsplash.com/?utm_source=your_app_name&utm_medium=referral">Unsplash</a>`;
       imageContainer.appendChild(image);
+      imageContainer.appendChild(attribution);
     }
   }
 
-  getImages();
+getImages();
