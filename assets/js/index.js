@@ -3,7 +3,7 @@ const imageContainer = document.getElementById("image-container");
   async function getImages() {
     for (let i = 0; i < 12; i++) {
       const response = await fetch(
-        "https://api.unsplash.com/photos/random?query=hiking,mountaineering,traveling&client_id=H8jlm4V590DpLnhmytlnXOi71Nehjjs2giQZbqIEfyg"
+        "https://api.unsplash.com/photos/random?query=hiking,mountaineering,traveling&client_id=b5H9YUli8wDuaTQPTiLDEqBO3x6NkDbaRabIW48Q5_U"
       );
       const data = await response.json();
       const image = document.createElement("img");
