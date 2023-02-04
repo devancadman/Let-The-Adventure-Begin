@@ -217,16 +217,18 @@ ul.social-networks li i{font-size:30px;color: var(--main-color);}
     max-height: 260px;
     object-fit: cover;
     object-position: center;
-}
-
-.image:hover {
-    transform: scale(1.05);
-    transition: all .25s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .image-attribution-container {
     position: relative;
     display: inline-block;
+    overflow: hidden;
+}
+
+.image-attribution-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .attribution {
