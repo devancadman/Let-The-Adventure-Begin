@@ -388,8 +388,14 @@ ul.social-networks li i{font-size:30px;color: var(--main-color);}
     }
 }
 
+/* For Tablets */
 @media screen and (max-width: 800px){
     #photo{
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* For Mobile */
+@media screen and (max-width: 550px){
+
 }
