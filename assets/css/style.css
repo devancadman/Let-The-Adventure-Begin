@@ -397,5 +397,7 @@ ul.social-networks li i{font-size:30px;color: var(--main-color);}
 
 /* For Mobile */
 @media screen and (max-width: 550px){
-
+  .header {grid-template-columns:1fr;margin-bottom:2rem;}
+  #logo, #menu {margin:0 auto;}
+  .header nav {display:inline-grid;}
 }
