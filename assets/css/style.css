@@ -383,16 +383,14 @@ ul.social-networks li i{font-size:30px;color: var(--main-color);}
         padding: 0 20px 0 20px;
     }
 
-    #photo{
+    #photo, section#image-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 /* For Tablets */
 @media screen and (max-width: 800px){
-    #photo{
-        grid-template-columns: 1fr 1fr;
-    }
+    #photo, section#image-container {grid-template-columns: 1fr 1fr;}
 }
 
 /* For Mobile */
@@ -401,4 +399,5 @@ ul.social-networks li i{font-size:30px;color: var(--main-color);}
   #logo, #menu, #menu li {margin:0 auto;}
   header nav {display:inline-grid;}
   #menu li {float:none;}
+  section#image-container {grid-template-columns: repeat(1, 1fr);}
 }
